@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -16,12 +16,16 @@
 
   /* Change the first number */
   /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
-  --gradient-color: linear-gradient(180deg, hsla(207, 48%, 72%, 0), hsla(207, 65%, 65%, 1));
+  --gradient-color: linear-gradient(
+    180deg,
+    hsla(207, 48%, 72%, 0),
+    hsla(207, 65%, 65%, 1)
+  );
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Roboto', sans-serif;
-  --title-font: 'Lora', serif;
+  --body-font: "Roboto", sans-serif;
+  --title-font: "Lora", serif;
   --biggest-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -107,7 +111,7 @@ img {
   font-size: 1.25rem;
   color: var(--title-color);
   cursor: pointer;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 /*========== Variables Dark theme ==========*/
@@ -126,7 +130,7 @@ body.dark-theme {
 .dark-theme .nav__menu,
 .dark-theme .scrollup {
   background-color: var(--container-color);
-  box-shadow: 0 4px 20px hsla(207, 24%, 8%, .4);
+  box-shadow: 0 4px 20px hsla(207, 24%, 8%, 0.4);
 }
 
 .dark-theme .home__shape-wawes,
@@ -217,7 +221,7 @@ body.dark-theme {
   box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
   padding-inline: 1.5rem;
   border-radius: 3rem;
-  transition: background .4s;
+  transition: background 0.4s;
 }
 
 .nav__logo,
@@ -321,7 +325,7 @@ body.dark-theme {
   justify-self: center;
   border-radius: 6.25rem;
   place-items: center;
-  transition: background .4s;
+  transition: background 0.4s;
 }
 
 .home__perfil {
@@ -398,6 +402,27 @@ body.dark-theme {
   padding-right: 4rem;
 }
 
+.home__info-description ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.home__info-description ul li {
+  color: var(--text-color-light);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.home__info-description ul li a {
+  margin: 0 0.25rem;
+  color: var(--title-color);
+}
+
+.home__info-description ul li a:hover {
+  text-decoration: underline;
+}
+
 .home__info-number {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
@@ -442,7 +467,7 @@ body.dark-theme {
   border-radius: 3rem;
   place-items: center;
   margin-bottom: 1rem;
-  transition: background .4s;
+  transition: background 0.4s;
 }
 
 .skills__blob img {
@@ -553,7 +578,7 @@ body.dark-theme {
   text-align: center;
   padding: 3.5rem 1rem;
   border-radius: 7.25rem;
-  transition: background .4s;
+  transition: background 0.4s;
 }
 
 .services__card i {
@@ -639,7 +664,7 @@ body.dark-theme {
 /* Swiper class */
 .projects__container .swiper-button-prev::after,
 .projects__container .swiper-button-next::after {
-  content: '';
+  content: "";
 }
 
 .projects__container .swiper-button-prev,
@@ -720,7 +745,7 @@ body.dark-theme {
 
 .testimonial__container .swiper-button-next::after,
 .testimonial__container .swiper-button-prev::after {
-  content: '';
+  content: "";
 }
 
 .testimonial__container .swiper-button-next,
@@ -846,7 +871,7 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   padding: 0.35rem;
-  transition: background .4s;
+  transition: background 0.4s;
 }
 
 .contact__form-area {
@@ -865,7 +890,7 @@ body.dark-theme {
   font-weight: var(--font-semi-bold);
   cursor: pointer;
   outline: none;
-  margin-top: .75rem;
+  margin-top: 0.75rem;
 }
 
 .contact__form .contact__button i {
@@ -886,7 +911,7 @@ body.dark-theme {
 }
 
 .color-blue {
-  color: hsl(207, 56%, 45%)
+  color: hsl(207, 56%, 45%);
 }
 
 /*=============== FOOTER ===============*/
@@ -927,11 +952,11 @@ body.dark-theme {
 .footer__social-link {
   font-size: 1.25rem;
   color: var(--title-color);
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .footer__social-link:hover {
-  transform: translateY(-.15rem)
+  transform: translateY(-0.15rem);
 }
 
 .footer__copy {
@@ -943,19 +968,19 @@ body.dark-theme {
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-  width: .6rem;
-  border-radius: .5rem;
+  width: 0.6rem;
+  border-radius: 0.5rem;
   background-color: hsl(207, 4%, 75%);
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: hsl(207, 4%, 65%);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: hsl(207, 4%, 65%);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -968,18 +993,18 @@ body.dark-theme {
   right: 1rem;
   bottom: -30%;
   background-color: var(--body-color);
-  box-shadow: 0 4px 12px hsl(207, 24%, 35%, .15);
+  box-shadow: 0 4px 12px hsl(207, 24%, 35%, 0.15);
   display: inline-flex;
-  padding: .35rem;
-  border-radius: .25rem;
+  padding: 0.35rem;
+  border-radius: 0.25rem;
   font-size: 1.1rem;
   color: var(--title-color);
   z-index: var(--z-tooltip);
-  transition: bottom .3s, transform .3s;
+  transition: bottom 0.3s, transform 0.3s;
 }
 
 .scrollup:hover {
-  transform: translateY(-.25rem);
+  transform: translateY(-0.25rem);
 }
 
 /* Show Scroll Up*/
@@ -989,7 +1014,7 @@ body.dark-theme {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (min-width:340px) {
+@media screen and (min-width: 340px) {
   .container {
     margin-inline: 1rem;
   }
@@ -1013,8 +1038,7 @@ body.dark-theme {
 }
 
 /* For medium devices */
-@media screen and (min-width:576px) {
-
+@media screen and (min-width: 576px) {
   .nav,
   .nav__menu {
     width: 380px;
@@ -1099,12 +1123,12 @@ body.dark-theme {
 }
 
 /* For large devices */
-@media screen and (min-width:1023px) {
+@media screen and (min-width: 1023px) {
   .header {
     top: 0;
     bottom: initial;
     background-color: var(--body-color);
-    transition: .4s;
+    transition: 0.4s;
   }
 
   .nav {
@@ -1128,7 +1152,7 @@ body.dark-theme {
     margin-left: auto;
     padding-bottom: 0;
     background-color: var(--body-color);
-    transition: background .4s;
+    transition: background 0.4s;
   }
 
   .nav__list {
@@ -1172,21 +1196,21 @@ body.dark-theme {
 
   /* Change background header */
   .bg-header {
-    box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
   }
 
   .dark-theme .bg-header {
-    box-shadow: 0 6px 24px hsla(207, 24%, 8%, .6);
+    box-shadow: 0 6px 24px hsla(207, 24%, 8%, 0.6);
   }
 }
 
-@media screen and (min-width:1048px) {
+@media screen and (min-width: 1048px) {
   .container {
     margin-inline: auto;
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .section__border {
     padding-bottom: 6rem;
   }
